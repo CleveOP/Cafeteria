@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Cafeteria Borcelle</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="video-bg-container">
+        <video class="video-bg" src="./img/fumaça.mp4" autoplay muted loop playsinline></video>
+    </div>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <video src="./img/borcelle logo café.mp4" alt="logo" autoplay muted loop class="logo-video"></video>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html"><span>Sobre</span></a></li>
+                <li><a href="cadastro.html" class="active"><span>Cadastro</span></a></li>
+                <li><a href="contato.html"><span>Contato</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Banner do Cardápio -->
+        <section class="banner">
+            <video src="./img/cardapio.mp4" alt="Banner Cardápio" style="width:100%;max-height:260px;object-fit:cover;border-radius:16px 16px 0 0;" autoplay muted loop></video>
+            <div class="banner-texto">
+                <h1>Nosso Cardápio</h1 style="color: aliceblue;">
+                <p>Sabores especiais para todos os gostos!</p>
+                <a href="contato.html" class="cta-btn">Peça pelo WhatsApp</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Cardápio</h2 >
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="./img/caféespresso.jpg" alt="Espresso" style="width:100px;height:100px;object-fit:cover;border-radius:8px;">
+                    <h3>Espresso</h3>
+                    <p>Café intenso e aromático.</p>
+                    <span>R$ 6,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./img/capuchino.jpg" alt="Cappuccino" style="width:100px;height:100px;object-fit:cover;border-radius:8px;">
+                    <h3>Cappuccino</h3>
+                    <p>Com espuma cremosa e toque de canela.</p>
+                    <span>R$ 8,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./img/mocha.jpg" alt="Mocha" style="width:100px;height:100px;object-fit:cover;border-radius:8px;">
+                    <h3>Mocha</h3>
+                    <p>Chocolate, café e leite vaporizado.</p>
+                    <span>R$ 9,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="./img/bolo de cenoura.jpg" alt="Bolo de Cenoura" style="width:100px;height:100px;object-fit:cover;border-radius:8px;">
+                    <h3>Bolo de Cenoura</h3>
+                    <p>Com cobertura de chocolate.</p>
+                    <span>R$ 7,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="section depoimentos">
+            <h2>O que nossos clientes acham</h2>
+            <div class="depoimentos-grid">
+                <blockquote>
+                    <p>“O cappuccino é sensacional! Sempre volto.”</p>
+                    <footer>— Lucas Andrade</footer>
+                </blockquote>
+                <blockquote>
+                    <p>“Doces fresquinhos e ambiente acolhedor.”</p>
+                    <footer>— Fernanda Lima</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Galeria de fotos -->
+        <section class="section galeria">
+            <h2>Galeria</h2>
+            <div class="galeria-grid">
+                <img src="./img/galeria1img.jpg" alt="Ambiente 1">
+                <img src="./img/galeria2img.jpg" alt="Ambiente 2">
+                <img src="./img/galeria3img.jpg" alt="Ambiente 3">
+                <img src="./img/galeria4img (2).jpg" alt="Ambiente 4">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mooca Coffee. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
