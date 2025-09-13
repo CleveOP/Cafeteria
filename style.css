@@ -1,5 +1,5 @@
 .section, .banner, .menu-item, .horarios, .depoimentos, .galeria, .contact-form, footer, header {
-	background: rgba(83, 56, 30, 0.955) !important;
+	background: rgba(129, 88, 51, 0.955) !important;
 	/* branco translúcido */
 	backdrop-filter: blur(1px);
 	-webkit-backdrop-filter: blur(1px);
@@ -243,21 +243,21 @@ nav a:hover {
 	margin-top: 1.5rem;
 }
 .menu-item {
-	background: #fff8f0;
-	border-radius: 8px;
+
+	border-radius: 40px;
 	padding: 1rem;
-	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.02);
 	text-align: center;
 }
 .menu-item h3 {
 	margin: 0.5rem 0 0.2rem 0;
-	color: #795548;
+	color: #f34f14;
 }
 .menu-item span {
 	display: block;
 	margin-top: 0.5rem;
 	font-weight: bold;
-	color: #a1887f;
+	color: #df440b;
 }
 
 .contact-form {
@@ -272,12 +272,12 @@ nav a:hover {
 	border: 1px solid #e0cfc2;
 	border-radius: 6px;
 	font-size: 1rem;
-	background: #f7f3ef;
+	background: #7f6143;
 	resize: none;
 }
 .contact-form button {
 	background: #a1887f;
-	color: #fff;
+	color: #382626;
 	border: none;
 	border-radius: 6px;
 	padding: 0.7rem;
