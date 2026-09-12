@@ -1,18 +1,19 @@
 :root {
-  --bg: #f5efe7;
+  --bg: #f7f1ea;
   --panel: rgba(255, 250, 245, 0.88);
-  --panel-strong: #fffaf4;
-  --brown-900: #2d1a12;
-  --brown-800: #432b1b;
-  --brown-700: #5d3525;
-  --brown-500: #9d6f48;
-  --brown-300: #d8b28a;
-  --gold: #d4a76a;
-  --cream: #f7e9d1;
-  --text: #2d1e18;
-  --muted: #6c5146;
+  --panel-strong: #fffdfb;
+  --brown-900: #20150f;
+  --brown-800: #3a261d;
+  --brown-700: #5c3a2d;
+  --brown-500: #8a5b43;
+  --brown-300: #d7b38f;
+  --gold: #d9b37d;
+  --gold-deep: #b8844d;
+  --cream: #f3e4d0;
+  --text: #2a1d1a;
+  --muted: #6f544d;
   --white: #fff;
-  --shadow-soft: 0 18px 40px rgba(46, 29, 15, 0.12);
+  --shadow-soft: 0 18px 40px rgba(45, 27, 18, 0.12);
   --radius: 22px;
 }
 
@@ -27,7 +28,7 @@ html {
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
-  background: linear-gradient(180deg, #f5efe7 0%, #ead8c3 100%);
+  background: linear-gradient(180deg, #f7f1ea 0%, #efe2d3 100%);
   color: var(--text);
   line-height: 1.6;
 }
@@ -70,13 +71,13 @@ body, .header, main, footer {
 }
 
 header {
-  background: rgba(90, 53, 37, 0.82);
+  background: rgba(40, 24, 19, 0.86);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 10px 25px rgba(30, 16, 10, 0.12);
+  box-shadow: 0 12px 30px rgba(30, 16, 10, 0.15);
   padding: 1rem 1.25rem 1.2rem;
 }
 
@@ -246,31 +247,31 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--gold), #c98d4a);
-  color: var(--brown-900);
+  background: linear-gradient(135deg, var(--gold), var(--gold-deep));
+  color: #fffaf4;
   padding: 0.9rem 1.6rem;
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
-  box-shadow: 0 12px 25px rgba(197, 138, 70, 0.3);
+  box-shadow: 0 12px 25px rgba(184, 132, 77, 0.28);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cta-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(197, 138, 70, 0.38);
+  box-shadow: 0 14px 30px rgba(184, 132, 77, 0.34);
 }
 
 .section {
   max-width: 1100px;
   margin: 2.2rem auto;
-  background: rgba(255, 250, 244, 0.9);
+  background: rgba(255, 252, 250, 0.92);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
   padding: 2rem;
-  border: 1px solid rgba(125, 92, 72, 0.08);
+  border: 1px solid rgba(116, 82, 63, 0.08);
 }
 
 .section h2,
@@ -333,7 +334,7 @@ main {
 .menu-item,
 .depoimentos-grid blockquote,
 .contact-card {
-  background: var(--panel-strong);
+  background: linear-gradient(180deg, #fffdfc 0%, #f8efe8 100%);
   border: 1px solid rgba(120, 78, 52, 0.08);
   border-radius: 18px;
   padding: 1.4rem;
@@ -558,7 +559,7 @@ main {
 }
 
 footer {
-  background: rgba(49, 31, 23, 0.96);
+  background: linear-gradient(180deg, rgba(35, 22, 18, 0.98), rgba(49, 31, 23, 0.96));
   color: rgba(255,255,255,0.86);
   text-align: center;
   padding: 2rem 1rem 1.5rem;
