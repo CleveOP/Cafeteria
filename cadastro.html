@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Clientes | Cafeteria Borcelle</title>
+    <meta name="description" content="Cadastre-se na Mooca Coffee para receber novidades, promoções e convites especiais.">
+    <title>Cadastro | Mooca Coffee</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -11,41 +12,63 @@
     <div class="video-bg-container">
         <video class="video-bg" src="./img/fumaça.mp4" autoplay muted loop playsinline></video>
     </div>
+
     <header class="header">
-        <a href="index.html" class="logo">
-            <video src="./img/borcelle logo café.mp4" alt="logo" autoplay muted loop class="logo-video"></video>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html"><span>Sobre</span></a></li>
-                <li><a href="cardapio.html"><span>Cardápio</span></a></li>
-                <li><a href="contato.html"><span>Contato</span></a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="Ir para a página inicial">
+                <video src="./img/borcelle logo café.mp4" alt="Logo da Cafeteria" autoplay muted loop class="logo-video"></video>
+            </a>
+            <div class="nav-wrap">
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="site-nav" aria-label="Navegação principal">
+                    <ul>
+                        <li><a href="index.html">Sobre</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="cadastro.html" class="active">Cadastro</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+
     <main>
-        <!-- Banner do Cadastro -->
         <section class="banner">
-            <video src="./img/cadvideo2.mp4" alt="Banner Cadastro" style="width:100%;max-height:220px;object-fit:cover;border-radius:16px 16px 0 0;" autoplay muted loop></video>
-            <div class="banner-texto" style="color: aliceblue;">
+            <video src="./img/cadvideo2.mp4" alt="Banner de cadastro" autoplay muted loop></video>
+            <div class="banner-texto">
                 <h1>Cadastre-se</h1>
-                
+                <p>Receba novidades, promoções e uma experiência premium.</p>
                 <a href="index.html" class="cta-btn">Voltar para Home</a>
             </div>
         </section>
 
         <section class="section">
-            <h2>Cadastro de Clientes</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Nome completo" required>
-                <input type="email" placeholder="E-mail" required>
-                <input type="tel" placeholder="Telefone" required>
-                <textarea placeholder="Mensagem (opcional)"></textarea>
-                <button type="submit">Cadastrar</button>
-            </form>
+            <h2>Cadastro de clientes</h2>
+            <div class="contact-layout">
+                <div class="contact-card">
+                    <h3>Vantagens</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-gift"></i> Descontos exclusivos</li>
+                        <li><i class="fa-solid fa-bell"></i> Promoções antecipadas</li>
+                        <li><i class="fa-solid fa-cup-togo"></i> Acesso prioritário em eventos</li>
+                    </ul>
+                </div>
+                <div class="contact-card">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Nome completo" required>
+                        <input type="email" placeholder="E-mail" required>
+                        <input type="tel" placeholder="Telefone" required>
+                        <textarea placeholder="Mensagem (opcional)"></textarea>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
         </section>
 
-        <!-- Depoimentos -->
         <section class="section depoimentos">
             <h2>Clientes cadastrados recomendam</h2>
             <div class="depoimentos-grid">
@@ -60,7 +83,6 @@
             </div>
         </section>
 
-        <!-- Galeria de fotos -->
         <section class="section galeria">
             <h2>Galeria</h2>
             <div class="galeria-grid">
@@ -71,8 +93,47 @@
             </div>
         </section>
     </main>
+
     <footer>
+        <div class="brand">Mooca Coffee</div>
+        <div class="footer-links">
+            <a href="index.html">Sobre</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="contato.html">Contato</a>
+            <a href="cadastro.html">Cadastro</a>
+        </div>
+        <div class="social" aria-label="Redes sociais">
+            <a href="https://www.linkedin.com/in/cleverson-de-oliveira-pereira-a794512ba/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
         <p>&copy; 2025 Mooca Coffee. Todos os direitos reservados.</p>
     </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.site-nav');
+
+            if (toggle && nav) {
+                toggle.addEventListener('click', () => {
+                    const isOpen = nav.classList.toggle('open');
+                    toggle.setAttribute('aria-expanded', String(isOpen));
+                });
+
+                nav.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        nav.classList.remove('open');
+                        toggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
+
