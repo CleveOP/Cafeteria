@@ -57,13 +57,16 @@ button {
   inset: 0;
   z-index: -2;
   overflow: hidden;
+  opacity: 0.22;
+  background: radial-gradient(circle at top, rgba(186, 141, 93, 0.2), transparent 45%),
+              linear-gradient(180deg, #f3e7d9 0%, #f7f1ea 100%);
 }
 
 .video-bg {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  filter: brightness(0.48) blur(1px);
+  filter: brightness(0.82) saturate(0.8) blur(1.5px);
 }
 
 body, .header, main, footer {
