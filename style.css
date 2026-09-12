@@ -452,6 +452,15 @@ main {
   border-radius: 16px;
   box-shadow: 0 12px 18px rgba(32, 18, 9, 0.08);
   transition: transform 0.25s ease;
+  display: block;
+}
+
+.about-grid video,
+.galeria-grid img,
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .galeria-grid img:hover {
@@ -757,15 +766,6 @@ footer .brand {
     grid-template-columns: 1fr;
   }
 
-  nav ul {
-    gap: 0.4rem;
-  }
-
-  nav a {
-    padding: 0.65rem 0.8rem;
-    font-size: 0.92rem;
-  }
-
   .about-grid > div,
   .horarios,
   .feature-card,
@@ -774,6 +774,26 @@ footer .brand {
   .depoimentos-grid blockquote {
     width: 100%;
     max-width: 100%;
+  }
+
+  .about-grid video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .galeria-grid img {
+    height: 220px;
+  }
+
+  nav ul {
+    gap: 0.4rem;
+  }
+
+  nav a {
+    padding: 0.65rem 0.8rem;
+    font-size: 0.92rem;
   }
 
   .contact-card li {
