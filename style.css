@@ -288,6 +288,17 @@ main {
   box-shadow: var(--shadow-soft);
   padding: 2rem;
   border: 1px solid rgba(116, 82, 63, 0.08);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.section *,
+.banner-texto *,
+.contact-card *,
+.feature-card *,
+.menu-item *,
+.about-grid * {
+  min-width: 0;
 }
 
 .section h2,
@@ -499,6 +510,12 @@ main {
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.contact-card li i {
+  flex-shrink: 0;
 }
 
 .contact-form {
